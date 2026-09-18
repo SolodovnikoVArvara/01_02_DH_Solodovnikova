@@ -24,5 +24,5 @@ my_data2 <- my_data |>
 # новый столбец должен называться n, не делайте сортировку 
 my_data3 <- my_data2 |>
   filter(author == "Shakespeare" | author == "Marlowe") |>
-    group_by(author) |> 
-    summarise(n = n())
+  group_by(author) |> 
+  summarise(n = n())
